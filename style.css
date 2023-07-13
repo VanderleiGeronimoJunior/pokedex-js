@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background: #0d1117;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo{
+    margin: 2rem;
+}
+
+.logo img{
+    width: 360px;
+    height: 150px;
+}
+
+#regionSelector{
+    position: absolute;
+    top: 170px;
+    right: 180px;
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+#regionSelector option{
+    padding: 5px;
+}
+
+.number,
+.name,
+.type{
+    letter-spacing: 2px;
+    color: #0d1117;
+}
+
+.pokeContainer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    
+    /* border: 1px solid #22f; */
+}
+
+.pokemon{
+    width: 250px;
+    height: 420px;
+    margin: 10px;
+    padding: 30px;
+    transition: all ease-out 0.52s; 
+    text-align: center;
+    position: relative;
+    border-radius: 16px;
+    
+    
+    /* From https://css.glass */
+/* background: rgba(81, 81, 81, 0.04);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.1px);
+-webkit-backdrop-filter: blur(2.1px);
+border: 1px solid rgba(81, 81, 81, 0.21); */
+}
+.pokemon:hover{
+    transform: scale(1.06);
+}
+
+.imgContainer{
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 43px 71px 39px 77px;
+}
+img{
+    width: 120px;
+    height: 180px;
+    padding-bottom: 50px;
+    
+}
+
+.info{
+    margin-top: 50px;
+}
+.number{
+    font-size: 0.986rem;
+    font-weight: bold;
+    background-color: rgba(81, 81, 81, 0.21);
+    padding: 5px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.name{
+    margin-top: 15px;
+}
+
