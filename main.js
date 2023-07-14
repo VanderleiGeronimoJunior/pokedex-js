@@ -1,24 +1,25 @@
 const pokeContainer = document.querySelector('#pokeContainer');
-const pokeCount = 150;
+const pokeCount = 300;
 const colors = {
-    fire: '#FDDFDF',
-    grass: '#DEFDE0',
-    electric: '#FCF7DE',
-    water: '#DEF3FD',
+    fire: '#fd7d24',
+    grass: '#9bcc50',
+    electric: '#eed535',
+    water: '#4592c4',
     ground: '#f4e7da',
-    rock: '#d5d5d4',
-    fairy: '#fceaff',
-    poison: '#98d7a5',
+    rock: '#a38c21',
+    fairy: '#fdb9e9',
+    insect: '#f3ed41',
+    poison: '#b97fc9',
     bug: '#f8d5a3',
-    dragon: '#97b3e6',
-    psychic: '#eaeda1',
-    flying: '#F5F5F5',
-    fighting: '#E6E0D4',
-    normal: '#F5F5F5',
+    dragon: '#53a4cf',
+    psychic: '#f366b9',
+    flying: '#3dc7ef',
+    fighting: '#d56723',
+    normal: '#a4acaf',
     dark: '#40445A',
-    ghost: '#40445A',
-    ice: '#94befdb1',
-    steel: '#DEDDDE'
+    ghost: '#7b62a3',
+    ice: '#51c4e7',
+    steel: '#9eb7b8'
 }
 
 const mainTypes = Object.keys(colors);
@@ -61,8 +62,7 @@ const creatPokeCard = (poke) => {
 
     const pokeInnerHTML = `
             <div class="imgContainer">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${poke.id}.png" alt="${name}" style="width: 100px;">
-                
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${poke.id}.png" alt="${name}" style="width: 100px;">                
             </div>
             <div class="info">
                 <span class="number">#${id}</span>

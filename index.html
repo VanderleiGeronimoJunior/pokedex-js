@@ -3,28 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
     <title>Pokedex</title>
 </head>
 <body>
-    <div class="logo">
-        <img src="./assets/Pokemon-PNG-Pic.png" alt="">
-    </div>
 
-    <select id="regionSelector">
-        <option value="">Selecione uma região</option>
-        <option value="1">Kanto</option>
-        <option value="2">Johto</option>
-        <option value="3">Hoenn</option>
-        <option value="4">Sinnoh</option>
-        <option value="5">Unova</option>
-        <option value="6">Kalos</option>
-        <option value="7">Alola</option>
-        <option value="8">Galar</option>
-    </select>
-    <div class="pokeContainer" id="pokeContainer">
+    <nav class="menu-sidebar">
+
+        <ul class="menu-itens">
+            <li>
+                <a href="#">
+                    <span class="icon icon-plug icon-text">
+                        <img src="assets/icons/pokebola.png" style="width: 40px; height: 40px;" alt="">
+                    </span>
+                    <span class="menu-texto">
+                        Página Inícial
+                    </span>
+                </a>
+              
+            </li>
+
+            <li class="has-subnav">
+                <a href="#">
+                    <span class="icon icon-plug icon-text">
+                        <img src="assets/icons/pikachu.png" style="width: 40px; height: 40px;" alt="">
+                    </span>
+                    <span class="menu-texto">pokémon</span>
+                </a>
+                
+            </li>
+            
+            <li class="has-subnav">
+                <a href="#">
+                    <span class="icon icon-plug icon-text">
+                        <img src="assets/icons/ovo.png" style="width: 40px; height: 40px;" alt="">
+                    </span>
+                    <span class="menu-texto">Tipos</span>
+                </a>
+                
+            </li>
+
+            <li class="has-subnav">
+                <a href="#">
+                    <span class="icon icon-plug icon-text">
+                        <img src="assets/icons/mapa (1).png" style="width: 40px; height: 40px;" alt="">
+                    </span>
+                    <span class="menu-texto">Regiões</span>
+                </a>
+               
+            </li>
+            
         
+        </ul>
+
+        <!-- <ul class="logout">
+            
+            <li>
+               <a href="#">
+                    <i class="icon icon-plug icon-text"></i>
+                    <span class="menu-texto"> Sair</span>
+                </a>
+            </li>
+
+        </ul> -->
+
+</nav>
+    
+    <div class="container">
+        <div class="logo">
+            <img src="./assets/Pokemon-PNG-Pic.png" alt="">
+        </div>
+
+        <select id="regionSelector">
+            <option value="">Selecione uma região</option>
+            <option value="1">Kanto</option>
+            <option value="2">Johto</option>
+            <option value="3">Hoenn</option>
+            <option value="4">Sinnoh</option>
+            <option value="5">Unova</option>
+            <option value="6">Kalos</option>
+            <option value="7">Alola</option>
+            <option value="8">Galar</option>
+        </select>
+        <div class="pokeContainer" id="pokeContainer">
+            
+        </div>
     </div>
 
 <body>
