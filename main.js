@@ -35,7 +35,7 @@ const getPoke = async (id) => {
     const res = await fetch(url);
     const data = await res.json();
     creatPokeCard(data)
-    console.log(data);
+    // console.log(data);
 }
 
 const creatPokeCard = (poke) => {
@@ -61,21 +61,26 @@ const creatPokeCard = (poke) => {
     const speed = poke.stats.find((stat) => stat.stat.name === "speed").base_stat;
 
     const pokeInnerHTML = `
-            <div class="imgContainer">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${poke.id}.png" alt="${name}" style="width: 100px;">                
+            <div class="imgContainer"></div>
+            <figure class="pokemon-figure">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${poke.id}.png" alt="${name}" ;">
+            </figure>
+            <div class="pokeInfo">
+            <span class="number ">#${id}</span>
+            <h3 class="name">${name}</h3>
+            <small class="type ">Type: <span>${type}</span></small>
             </div>
             <div class="info">
-                <span class="number">#${id}</span>
-                <h3 class="name">${name}</h3>
-                <small class="type">Type: <span>${type}</span></small>
-                <p>Habilidades: ${abilities}</p>
-                <p>HP: ${hp}</p>
-                <p>Ataque: ${attack}</p>
-                <p>Defesa: ${defense}</p>
-                <p>Velocidade: ${speed}</p>
+            <div class="subInfo"><span>Habilidades:</span> <span>${abilities}</span></div>
+            <div class="subInfo"><span>HP:</span> <span>${hp}</span></div>
+            <div class="subInfo"><span>Ataque:</span> <span>${attack}</span></div>
+            <div class="subInfo"><span>Defesa:</span> <span>${defense}</span></div>
+            <div class="subInfo"><span>Velocidade:</span> <span>${speed}</span></div>
             </div>
     `
 
+                
+    
     card.innerHTML = pokeInnerHTML
 
     pokeContainer.appendChild(card);
@@ -131,3 +136,10 @@ const creatPokeCard = (poke) => {
 //   // Pesquisar Pokémon da região inicialmente
 //   searchPokemonByRegion();
 fetchPoke()
+const id = 2;
+const pokemon = `https://pokeapi.co/api/v2/region/${id}/`;
+fetch(pokemon, () => {
+    console.log('pokemon')
+})
+.then(res => res.json())
+.then(res => console.log(res))

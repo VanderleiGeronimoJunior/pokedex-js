@@ -60,6 +60,7 @@ HTML | CSS | JavaScript
 
 - Fazer o consume de dados de uma API, manipulando a URL para trazer os dados até a tela.
 - Filtrar os Dados da API para trazer informações especificas.
+- Fazer paginação de dados vindo de uma API.
 
 
 
@@ -78,11 +79,12 @@ HTML | CSS | JavaScript
 1. login de usuário
 2. Adicionar aos Favoritos
 3. Tratar da Responsividade
-4. Trazer os dados em português
+4. Trazer os dados em português(API não tem dados em português)
 
 ###   Recursos Úteis
 🔧
 - <a href="https://www.pokeapi.co/">PokeAPI</a>
+- <a href="https://pokeapi.api-docs.io/v2.0/about/WAZsRcirvNZQKRCzT">pokeapi.api-docs.io</a>
 
 
 - <a href="https://www.flaticon.com/br/buscar?word=pok%C3%A9mon">Flaticon</a>
