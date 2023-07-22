@@ -54,21 +54,21 @@ const creatPokeCard = (poke) => {
     card.style.backgroundColor = color;
 
     const abilities = poke.abilities.map((ability) => ability.ability.name).join(", ");
-    // const types = poke.types.map((type) => type.type.name).join(", ");
+    const types = poke.types.map((type) => type.type.name).join(", ");
     const hp = poke.stats.find((stat) => stat.stat.name === "hp").base_stat;
     const attack = poke.stats.find((stat) => stat.stat.name === "attack").base_stat;
     const defense = poke.stats.find((stat) => stat.stat.name === "defense").base_stat;
     const speed = poke.stats.find((stat) => stat.stat.name === "speed").base_stat;
-
+    
     const pokeInnerHTML = `
-            <div class="imgContainer"></div>
+    <div class="imgContainer"></div>
             <figure class="pokemon-figure">
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${poke.id}.png" alt="${name}" ;">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${poke.id}.svg" alt="${name}" ;>
             </figure>
             <div class="pokeInfo">
             <span class="number ">#${id}</span>
             <h3 class="name">${name}</h3>
-            <small class="type ">Type: <span>${type}</span></small>
+            <small class="type "><span style= "font-weight: bold;">Type:</span> <span>${types}</span></small>
             </div>
             <div class="info">
             <div class="subInfo"><span>Habilidades:</span> <span>${abilities}</span></div>
@@ -136,10 +136,18 @@ const creatPokeCard = (poke) => {
 //   // Pesquisar Pokémon da região inicialmente
 //   searchPokemonByRegion();
 fetchPoke()
-const id = 2;
-const pokemon = `https://pokeapi.co/api/v2/region/${id}/`;
-fetch(pokemon, () => {
-    console.log('pokemon')
+const id = 1;
+const region = `https://pokeapi.co/api/v2/region/${id}/`;
+const regiao = fetch(region, () => {
+    console.log(region)
 })
 .then(res => res.json())
 .then(res => console.log(res))
+const pokemon = `https://pokeapi.co/api/v2/pokemon/`;
+fetch(pokemon, () => {
+    console.log(pokemon)
+})
+.then(res => res.json())
+.then(res => console.log(res))
+
+// console.log(pokemon);

@@ -1,0 +1,53 @@
+Pokemons:
+https://pokeapi.co/api/v2/pokemon/${id}
+Paginação de pokemons:
+https://pokeapi.co/api/v2/pokemon/?offset=20&limit=20
+
+Imagens Pokemons:
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png
+
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/151.svg
+
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/151.png
+
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/151.gif
+
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/151.png
+
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png
+
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/151.png
+
+Evolução:
+http://pokeapi.co/api/v2/evolution-chain/
+
+location:
+http://pokeapi.co/api/v2/location
+
+Regon:
+http://pokeapi.co/api/v2/region
+
+kanto:
+https://pokeapi.co/api/v2/region/1/
+johto:
+https://pokeapi.co/api/v2/region/2/
+hoenn:
+https://pokeapi.co/api/v2/region/3/
+sinnoh:
+https://pokeapi.co/api/v2/region/4/
+unova:
+https://pokeapi.co/api/v2/region/5/
+kalos:
+https://pokeapi.co/api/v2/region/6/
+alola:
+https://pokeapi.co/api/v2/region/7/
+galar:
+https://pokeapi.co/api/v2/region/8/
+hisui:
+https://pokeapi.co/api/v2/region/9/
+   pokedex:
+   https://pokeapi.co/api/v2/pokedex/30/
+paldea:
+https://pokeapi.co/api/v2/region/10/
+
+

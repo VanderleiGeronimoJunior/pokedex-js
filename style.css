@@ -276,8 +276,8 @@ nav.menu-sidebar li.active>a,
   }
 
 .imgContainer{
-width: 170px;
-height: 150px;
+width: 160px;
+height: 140px;
 margin: 0 10px;
 background-color: rgba(255, 255, 255, 0.6);
 border-radius: 43px 71px 39px 77px;
@@ -289,17 +289,20 @@ z-index: 0;
 }
 
 .pokemon .pokemon-figure {
+    width: 180px;
+    height: 180px;
     text-align: center;
   }
 
   .pokemon .pokemon-figure img{
-    width: 100%;
-    height: 80%;
+    width: 115%;
+    height: 130px;
     /* text-align: center; */
 
     position: relative;
     z-index: 1;
     transition: transform 1s ease-in-out;
+    /* border: 1px solid orange; */
 }
 .pokeInfo{
     position: relative;
@@ -311,18 +314,18 @@ z-index: 0;
 
 
 .pokemon:hover .imgContainer {
-    width: 170px;
-    height: 150px;
+    width: 160px;
+    height: 140px;
     transform: scale(0.6) translate(100px, -70px);
   }
 .pokemon:hover .pokemon-figure img {
-    width: 100%;
-    height: auto;
-    transform: scale(.6) translate(100px, -80px);
-    -webkit-transform: scale(.6) translate(100px, -80px);
-    -moz-transform: scale(.6) translate(100px, -80px);
-    -o-transform: scale(.6) translate(100px, -80px);
-    -ms-transform: scale(.6) translate(100px, -80px);
+  width: 115%;
+    height: 130px;
+    transform: scale(.6) translate(100px, -60px);
+    -webkit-transform: scale(.6) translate(100px, -60px);
+    -moz-transform: scale(.6) translate(100px, -60px);
+    -o-transform: scale(.6) translate(100px, -60px);
+    -ms-transform: scale(.6) translate(100px, -60px);
 }
 .pokemon:hover .pokeInfo {
         top: 0px;
@@ -349,11 +352,11 @@ z-index: 0;
   .pokemon:hover .info {
     top: 0px;
     left: 0px;
-    transform: translateY(-195px);
-    -webkit-transform: translateY(-195px);
-    -moz-transform: translateY(-195px);
-    -o-transform: translateY(-195px);
-    -ms-transform: translateY(-195px);
+    transform: translateY(-180px);
+    -webkit-transform: translateY(-180px);
+    -moz-transform: translateY(-180px);
+    -o-transform: translateY(-180px);
+    -ms-transform: translateY(-180px);
   }
   .pokemon .info .subInfo{
     width: 100%;

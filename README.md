@@ -28,9 +28,9 @@
 
 ## Funcionalidades
 
-1. Pegar dados da API Pokeapi.co
-2. Trazer as informações do pokemon no card
-3. Filtrar pokemons por Tipo, Região, Nome e Id
+1. Pegar dados da API Pokeapi.co e Trazer as informações do pokemon no card
+2. Filtrar pokemons por Tipo, Região, Nome e Id
+3. Paginação 
 4. Pre Loading
 
 
